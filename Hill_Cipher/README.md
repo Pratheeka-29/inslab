@@ -56,7 +56,7 @@ Enter the key matrix: [[6,24,1],[13,16,10],[20,17,15]]
 
 ### **Output:**
 ```bash
-Encrypted: EQNVZ
+Encrypted: TFJJZX
 ```
 
 ## **Code Explanation**
