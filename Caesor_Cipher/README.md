@@ -1,98 +1,117 @@
+Here’s the **README** for your Caesar Cipher code, including both encryption and decryption, structured in the format you requested:
 
+```markdown
+# Caesar Cipher
 
-# **Caesar Cipher Encryption & Decryption in Python**
+## Introduction
+The **Caesar Cipher** is one of the simplest and most widely known encryption techniques. It is a substitution cipher where each letter in the plaintext is shifted by a certain number of positions in the alphabet. This method is historically significant, and it provides a great introduction to basic encryption techniques.
 
-## **Overview**
-This Python script implements the **Caesar Cipher**, a simple encryption technique where each letter in the plaintext is shifted by a fixed number of positions in the alphabet. The program allows users to input a text and a shift value to encrypt the message, then decrypts it back to its original form.
+## Features of the Script
+This Python script provides an easy-to-understand implementation of the **Caesar Cipher** with both encryption and decryption functionalities. The features include:
 
-## **Features**
-- ✅ Encrypts a given text using the **Caesar Cipher** algorithm
-- ✅ Decrypts the encrypted text back to the original message
-- ✅ Preserves spaces, punctuation, and special characters
-- ✅ Supports both **uppercase and lowercase letters**
+- **Encryption**: Encrypts the input text by shifting each letter in the plaintext by a user-defined number.
+- **Decryption**: Decrypts the encrypted text by reversing the shift applied during encryption.
+- Handles both **uppercase** and **lowercase** letters, while preserving non-alphabetical characters (such as spaces, punctuation, etc.).
+- The script allows for dynamic input, asking for the **text** and **shift** from the user.
 
-## **How to Run the Code**
+## How the Caesar Cipher Works
+The Caesar Cipher works by shifting each letter in the plaintext by a specified number of positions down or up the alphabet.
 
-### **1. Prerequisites**
-Make sure you have **Python 3.x** installed on your system. You can download it from the official Python website:  
-[Download Python](https://www.python.org/downloads/)
+1. **Encryption**:
+   - Each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
+   - If the letter is an uppercase letter (A-Z), it shifts within the uppercase alphabet. Similarly, lowercase letters (a-z) shift within the lowercase alphabet.
+   
+2. **Decryption**:
+   - Decryption reverses the encryption process by shifting each letter in the encrypted text backward by the same number of positions as used during encryption.
+   
+3. **Non-Alphabet Characters**:
+   - Characters that are not part of the alphabet (e.g., spaces, punctuation) remain unchanged during both encryption and decryption.
 
-### **2. Clone the Repository**
-Clone this repository to your local machine using the following command:
+## Step-by-Step Instructions
+
+### 1. Prerequisites
+To run the Caesar Cipher code, you need **Python 3.x** installed on your system. There are no additional libraries required for this script as it uses basic Python functionality.
+
+### 2. Clone the Repository (Optional)
+If you'd like to clone this repository to your local machine, you can do so using the following command:
+
 ```bash
-git clone https://github.com/Pratheeka-29/inslab.git
+git clone https://github.com/YourUsername/caesar-cipher.git
 ```
 
+### 3. Navigate to the Project Folder (Optional)
+If you cloned the repository, move to the project directory:
 
-### **3. Navigate to the Project Folder**
-After cloning, go to the folder where the project is located:
 ```bash
-cd inslab
+cd caesar-cipher
 ```
 
-### **4. Run the Code Locally**
-To run the Caesar Cipher script locally:
+### 4. Running the Script
+To run the Caesar Cipher encryption and decryption script, simply run:
+
 ```bash
 python caesar_cipher.py
 ```
 
-### **5. Run the Code with GitHub Codespaces**  
-Alternatively, you can run the code directly on **GitHub Codespaces** without setting up Python locally. This is a cloud-based development environment, and you don't need to install anything on your computer. Just follow these steps:
+### 5. Enter Input for Encryption
+When prompted, enter the **text** you want to encrypt or decrypt and the **shift value** (an integer). The script will display both the encrypted and decrypted results.
 
-1. Open this repository on GitHub.
-2. Click on the green "Code" button.
-3. Select "Open with Codespaces" and then "Create new codespace".
-4. Wait for GitHub to set up the environment for you.
-5. Once the environment is ready, open the terminal inside Codespaces.
-6. Run the following command to execute the code:
-   ```bash
-   python caesar_cipher.py
-   ```
+## Example Run
 
-## **How It Works**
-- Each letter is shifted forward by the given shift value in encryption.
-- Each letter is shifted backward by the same shift value in decryption.
-- Non-alphabetical characters (e.g., spaces, numbers, punctuation) remain unchanged.
-
-## **Example Execution**
-
-### **Input:**
+### Input for Encryption:
 ```bash
-Enter the text: Hello, World!
+Enter the text: HELLO
 Enter the shift: 3
 ```
 
-### **Output:**
+### Output (Encryption):
 ```bash
-Encrypted: Khoor, Zruog!
-Decrypted: Hello, World!
+Encrypted: KHOOR
 ```
 
-## **Code Explanation**
-
-### **Functions**
-1. `caesar_cipher_encryption(text, shift)`:
-   - Shifts each letter **forward** by `shift` positions.
-   - Maintains case (uppercase/lowercase).
-   - Leaves non-alphabetic characters unchanged.
-
-2. `caesar_cipher_decryption(encryption, shift)`:
-   - Shifts each letter **backward** by `shift` positions.
-   - Maintains case and ignores non-alphabetic characters.
-
-## **Customization**
-Feel free to change the **shift** value to any positive or negative integer to adjust the encryption strength. For example:
-```python
-shift = 5
+### Input for Decryption:
+```bash
+Enter the text: KHOOR
+Enter the shift: 3
 ```
-This would shift each letter by 5 positions.
 
-You can also modify the script to handle negative shifts (left shifts) or to implement additional features like randomizing the shift value to enhance security.
+### Output (Decryption):
+```bash
+Decrypted: HELLO
+```
 
-## **Requirements**
-- **Python 3.x** (if running locally)
+## Code Explanation
 
-## **Additional Information**
-If you want to add more functionalities, like handling different cipher techniques, you can modify this script to support other shifts or even add encryption methods like **Vigenère cipher** or **Substitution cipher**.
+### `caesar_cipher_encryption(text, shift)`
+This function encrypts the given text by shifting each letter forward by the specified number of positions (shift value):
+- It checks if each character is an alphabet letter (A-Z or a-z).
+- If the character is a letter, it applies the shift and wraps around the alphabet using modulo arithmetic (`% 26`).
+- Non-alphabetic characters (e.g., spaces, punctuation) are added to the result without modification.
+
+### `caesar_cipher_decryption(encryption, shift)`
+This function decrypts the encrypted text by shifting each letter backward by the specified number of positions:
+- Similar to the encryption process, but the shift is reversed (subtracted instead of added).
+- Non-alphabetic characters are unchanged.
+
+## Customizing the Cipher
+- **Shift Value**: You can change the shift value to customize the encryption and decryption. Positive values shift to the right (forward), while negative values shift to the left (backward).
+- **Text**: The script handles both uppercase and lowercase letters, along with spaces and punctuation.
+
+## Requirements
+- Python 3.x
+
+## Run the Code Online
+
+You can also run the Caesar Cipher code directly in your browser using the following link on **OnlineGDB**.
+
+### Click the link to run the code:
+[https://onlinegdb.com/BOS_As6Si]
+
+By clicking on the link, you can run the code, input your text and shift value, and observe both the encryption and decryption process live.
 
 ---
+
+## Conclusion
+The Caesar Cipher is a simple yet effective encryption method that helps demonstrate the fundamentals of cryptography. While it is not secure by modern standards, it is a great introductory algorithm to learn and implement. This script provides both encryption and decryption capabilities for better understanding of how shift-based ciphers work.
+```
+
