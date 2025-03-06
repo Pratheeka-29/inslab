@@ -38,7 +38,7 @@ To run the Feistel Cipher code, you need **Python 3.x** installed on your system
 If you want to clone this repository to your local machine, use the following command:
 
 ```bash
-git clone https://github.com/YourUsername/feistel-cipher.git
+git clone https://github.com/Pratheeka-29/feistel-cipher.git
 ```
 
 ### 3. Navigate to the Project Folder (Optional)

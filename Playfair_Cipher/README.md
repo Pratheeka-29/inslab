@@ -39,7 +39,7 @@ To run the Playfair Cipher code, you will need **Python 3.x** installed on your 
 If you want to clone this repository to your local machine, use the following command:
 
 ```bash
-git clone https://github.com/YourUsername/playfair-cipher.git
+git clone https://github.com/Pratheeka-29/playfair-cipher.git
 ```
 
 ### 3. Navigate to the Project Folder (Optional)
