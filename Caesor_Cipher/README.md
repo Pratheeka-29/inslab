@@ -1,4 +1,3 @@
-Here’s the **README** for your Caesar Cipher code, including both encryption and decryption, structured in the format you requested:
 
 ```markdown
 # Caesar Cipher
