@@ -34,7 +34,7 @@ To run the Monoalphabetic Cipher code, you will need **Python 3.x** installed on
 If you want to clone this repository to your local machine, use the following command:
 
 ```bash
-git clone https://github.com/YourUsername/monoalphabetic-cipher.git
+git clone https://github.com/Pratheeka-29/monoalphabetic-cipher.git
 ```
 
 ### 3. Navigate to the Project Folder (Optional)
