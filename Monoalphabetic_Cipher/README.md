@@ -101,7 +101,7 @@ This function decrypts the encrypted text by reversing the substitution cipher:
 You can also run the **Monoalphabetic Cipher** code directly in your browser using the following link on **OnlineGDB**:
 
 ### Click the link to run the code:
-[]
+[https://onlinegdb.com/vTnhjwkvb]
 
 By clicking the link, you can run the code, input your text, and observe both the encryption and decryption processes in action.
 
