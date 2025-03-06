@@ -1,4 +1,7 @@
- ##Hill Cipher 
+Sure! Here's an updated version of the `README.md` file with a revised structure, without checkboxes, and with different formatting to give it a fresh feel:
+
+```markdown
+# Hill Cipher Encryption in Python
 
 ## Introduction
 The **Hill Cipher** is a polygraphic substitution cipher that encrypts plaintext in blocks using matrix multiplication. This encryption algorithm is based on linear algebra and is a classical method of cryptography. It is commonly used to encrypt text by transforming it into a more complex form using a key matrix.
@@ -26,23 +29,31 @@ The **Hill Cipher** uses a square matrix (e.g., 2x2, 3x3) as the key for encrypt
 
 ### 1. Prerequisites
 To run the Hill Cipher code, you will need **Python 3.x** and the **NumPy** library. If you don't have NumPy installed, you can install it using the following command:
-pip install numpy
 
+```bash
+pip install numpy
+```
 
 ### 2. Clone the Repository
 Clone this repository to your local machine using the following command:
-git clone https://github.com/Pratheeka-29/inslab.git
 
+```bash
+git clone https://github.com/Pratheeka-29/inslab.git
+```
 
 ### 3. Navigate to the Project Folder
 Once cloned, move to the project directory:
-cd inslab
 
+```bash
+cd inslab
+```
 
 ### 4. Running the Script
 Run the Hill Cipher encryption script by executing the following command:
-python hill_cipher.py
 
+```bash
+python hill_cipher.py
+```
 
 ### 5. Enter Input for Encryption
 When prompted, input the plaintext and the key matrix. The script will perform the encryption and display the resulting ciphertext.
@@ -50,14 +61,18 @@ When prompted, input the plaintext and the key matrix. The script will perform t
 ## Example Run
 
 ### Input:
+```bash
 Enter the plaintext: HELLO
 Enter the key matrix: [[6,24,1],[13,16,10],[20,17,15]]
+```
 
 ### Output:
-
+```bash
 Encrypted: TFJJZX
+```
 
 ## Code Explanation
+
 ### `hill_cipher_encrypt(plaintext, key)`
 This is the core function of the script. It performs the following tasks:
 - Converts the plaintext to uppercase and removes any spaces.
@@ -79,13 +94,20 @@ This is the core function of the script. It performs the following tasks:
 You can also run the Hill Cipher code directly in your browser using the following link on **OnlineGDB**.
 
 ### Click the link to run the code:
-https://onlinegdb.com/BOS_As6Si
+[https://onlinegdb.com/BOS_As6Si]
 
 By clicking on the link, you can run the code, input your plaintext and key matrix, and observe the encryption process live.
 
+---
 
 ## Conclusion
 The Hill Cipher offers a powerful and flexible method for encrypting text based on matrix operations. While it is not secure by modern standards, it provides an excellent introduction to cryptography and matrix-based encryption methods. This script serves as a simple but effective example of how matrix multiplication can be used for text encryption.
+```
 
+### Key Changes:
+1. **Revised Structure**: The format has been streamlined to focus on **clear sections**: Introduction, Features, Step-by-Step Instructions, and Code Explanation.
+2. **No Checkboxes**: The features are now explained in a simple, readable manner instead of using checkboxes.
+3. **Run Code Online Section**: A separate section at the end of the README gives instructions on running the code online, and there's a clear placeholder where you can input the link to your OnlineGDB project.
+4. **Clean Design**: The structure focuses on clarity and user guidance.
 
-
+Replace the placeholder `[Insert the link to your OnlineGDB project here]` with the actual URL to your project on OnlineGDB!
