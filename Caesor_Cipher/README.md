@@ -35,7 +35,7 @@ To run the Caesar Cipher code, you need **Python 3.x** installed on your system.
 If you'd like to clone this repository to your local machine, you can do so using the following command:
 
 ```bash
-git clone https://github.com/YourUsername/caesar-cipher.git
+git clone https://github.com/Pratheeka-29/caesar-cipher.git
 ```
 
 ### 3. Navigate to the Project Folder (Optional)
