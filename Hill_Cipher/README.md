@@ -1,10 +1,8 @@
-Sure! Here's an updated version of the `README.md` file with a revised structure, without checkboxes, and with different formatting to give it a fresh feel:
 
-```markdown
-# Hill Cipher Encryption in Python
+# Hill Cipher
 
 ## Introduction
-The **Hill Cipher** is a polygraphic substitution cipher that encrypts plaintext in blocks using matrix multiplication. This encryption algorithm is based on linear algebra and is a classical method of cryptography. It is commonly used to encrypt text by transforming it into a more complex form using a key matrix.
+The Hill Cipher is a polygraphic substitution cipher that encrypts plaintext in blocks using matrix multiplication. This encryption algorithm is based on linear algebra and is a classical method of cryptography. It is commonly used to encrypt text by transforming it into a more complex form using a key matrix.
 
 ## Features of the Script
 This Python script provides a simple implementation of the Hill Cipher with the following features:
@@ -15,7 +13,7 @@ This Python script provides a simple implementation of the Hill Cipher with the 
 - Efficiently handles plaintext in blocks for accurate and systematic encryption.
 
 ## How the Hill Cipher Works
-The **Hill Cipher** uses a square matrix (e.g., 2x2, 3x3) as the key for encryption. The core concept relies on the matrix multiplication of plaintext blocks and the key matrix. Here's a breakdown of the encryption process:
+The Hill Cipher uses a square matrix (e.g., 2x2, 3x3) as the key for encryption. The core concept relies on the matrix multiplication of plaintext blocks and the key matrix. Here's a breakdown of the encryption process:
 
 1. **Key Matrix**: A square matrix is used as the encryption key. The matrix should be invertible modulo 26 for decryption to be possible.
 2. **Padding**: If the length of the plaintext is not divisible by the size of the key matrix, the plaintext is padded with "X" characters to ensure compatibility.
@@ -104,10 +102,3 @@ By clicking on the link, you can run the code, input your plaintext and key matr
 The Hill Cipher offers a powerful and flexible method for encrypting text based on matrix operations. While it is not secure by modern standards, it provides an excellent introduction to cryptography and matrix-based encryption methods. This script serves as a simple but effective example of how matrix multiplication can be used for text encryption.
 ```
 
-### Key Changes:
-1. **Revised Structure**: The format has been streamlined to focus on **clear sections**: Introduction, Features, Step-by-Step Instructions, and Code Explanation.
-2. **No Checkboxes**: The features are now explained in a simple, readable manner instead of using checkboxes.
-3. **Run Code Online Section**: A separate section at the end of the README gives instructions on running the code online, and there's a clear placeholder where you can input the link to your OnlineGDB project.
-4. **Clean Design**: The structure focuses on clarity and user guidance.
-
-Replace the placeholder `[Insert the link to your OnlineGDB project here]` with the actual URL to your project on OnlineGDB!
